@@ -240,17 +240,10 @@ $(function () {
     },
     onLeave: function (index) {
       if (index == 1 || index == 2 || index == 3 || index == 4 || index == 5) {
+        $(".title-line:animated").stop();
         $(".title-line").remove();
         $("#content_info1").removeClass("title-scale");
         $(".title").removeClass("title-scale");
-        /*var h = $('.con1').data('radialIndicator');
-        var c = $('.con2').data('radialIndicator');
-        var j = $('.con3').data('radialIndicator');
-        var m = $('.con4').data('radialIndicator');
-        h.animate(0);
-        c.animate(0);
-        j.animate(0);
-        m.animate(0);*/
       };
       /*if(index==5){
        $(".info2 a").popover('hide');
@@ -280,9 +273,10 @@ $(function () {
   $(".link .d-button").hover(function () {
       var title = $(this).attr("data-title");
       $(".tip em").text(title);
+      var con = $(".container").offset().left;
       var pos = $(this).offset().left;
       var dis = ($(".tip").outerWidth() - $(this).outerWidth()) / 2;
-      var f = pos - dis - 100;
+      var f = pos - dis - con;
       $(".tip:animated").stop();
       $(".tip").css({"left": f + "px"}).animate({"top": 285, "opacity": 1}, 300);
     },

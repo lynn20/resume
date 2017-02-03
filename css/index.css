@@ -682,10 +682,10 @@ nav li a:hover:after {
   position: relative;
 }
 #email{
-  left:-800px;
+  left:-1200px;
 }
 #qq{
-  right:-800px;
+  right:-1200px;
 }
 .info2 img{
   transform: scale(0.9);
