@@ -2,7 +2,7 @@
 body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,pre,form,button,input,textarea,th,td{margin:0;padding:0;}
 ul,ol{list-style: none;}
 a{text-decoration: none;}
-a:hover{text-decoration: none;}
+a:hover,a:link{text-decoration: none;}
 
 /*公共样式*/
 .section{
@@ -457,7 +457,7 @@ nav li a:hover:after {
   margin-top:80px;
   visibility: hidden;
   overflow: hidden;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .box .link{
   width: 205px;
