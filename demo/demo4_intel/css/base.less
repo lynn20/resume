@@ -1,0 +1,71 @@
+@footer-ul-height:200px;
+@nav-height:50px;
+@large-img-height:486px;
+@contain-padding-left:15px;
+/*body*/
+body{
+  padding-top:@nav-height;
+}
+/*nav*/
+.navbar-brand{
+  display: inline-block;
+  width:63px;
+  height:45px;
+  background: url("../img/hdr-spr.png") no-repeat 0 -511px;
+  margin-top:10px;
+}
+/*main*/
+.main{
+  .media{
+    height:194px;
+    padding: 30px 0 0 20px;
+    .media-body ul{
+      padding: 3px 2px 0 8px;
+      li{
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .main-txt{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    padding-left: @contain-padding-left+3;
+    padding-bottom: 10px;
+    color:#fff;
+  }
+  .mask-container{
+    position: relative;
+    overflow-y: hidden;
+    .mask{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    top:170px;
+    z-index:99;
+    background-color:rgba(0,0,0,0.7);
+    padding-left:3px;
+    color:#fff;
+    -webkit-transition: top 500ms;
+       -moz-transition: top 500ms;
+        -ms-transition: top 500ms;
+         -o-transition: top 500ms;
+            transition: top 500ms;
+      &:hover{
+        top:0;
+      }
+    }
+  }
+}
+/*footer*/
+.footer{
+  ul{
+    li{
+      margin-bottom: 5px;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/*body*/
+body {
+  padding-top: 50px;
+}
+/*nav*/
+.navbar-brand {
+  display: inline-block;
+  width: 63px;
+  height: 45px;
+  background: url("../img/hdr-spr.png") no-repeat 0 -511px;
+  margin-top: 10px;
+}
+/*main*/
+.main .media {
+  height: 194px;
+  padding: 30px 0 0 20px;
+}
+.main .media .media-body ul {
+  padding: 3px 2px 0 8px;
+}
+.main .media .media-body ul li {
+  margin-bottom: 3px;
+}
+.main .main-txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 18px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.main .mask-container {
+  position: relative;
+  overflow-y: hidden;
+}
+.main .mask-container .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 170px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-left: 3px;
+  color: #fff;
+  -webkit-transition: top 500ms;
+  -moz-transition: top 500ms;
+  -ms-transition: top 500ms;
+  -o-transition: top 500ms;
+  transition: top 500ms;
+}
+.main .mask-container .mask:hover {
+  top: 0;
+}
+/*footer*/
+.footer ul li {
+  margin-bottom: 5px;
+}
+.footer ul li a {
+  text-decoration: none;
+}
