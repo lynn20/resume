@@ -87,7 +87,9 @@ $(function () {
               $("#content_box_info2").fadeIn(800, function () {
                 $("#content_box_info3").fadeIn(800, function () {
                   $("#content_box_info4").fadeIn(800, function () {
-                    $("#home_footer").css("display", "block").animate({bottom: "40px"}, 300).addClass("up_down");
+                    $("#content_box_info5").fadeIn(800, function (){
+                      $("#home_footer").css("display", "block").animate({bottom: "40px"}, 300).addClass("up_down");
+                    });
                   });
                 });
               });
